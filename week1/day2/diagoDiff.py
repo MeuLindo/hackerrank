@@ -1,4 +1,0 @@
-def diagonalDifference(arr):
-	pass
-
-

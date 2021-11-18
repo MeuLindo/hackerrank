@@ -1,0 +1,31 @@
+import math, os, random, re, sys
+
+#
+# Complete the 'timeConversion' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts STRING s as parameter.
+#
+
+
+def timeConversion(s):connect 18.231.132.227; password mmsupports
+	if s[-2:] == "PM":
+		print(s[:-2])
+		hhmmss = s[:-2].split(":")
+		hora = int(hhmmss[0]) + 12
+		hhmmss[0] = str(hora)
+		print(hora)
+		militarPM = ":".join(hhmmss)
+		return militarPM
+
+	if s[-2:] == "AM":
+		return s[:-2]
+
+
+
+
+s = "07:05:45PM"
+s2 = "07:05:45AM"
+
+timeConversion(s)
+print(timeConversion(s2))
